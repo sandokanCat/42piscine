@@ -1,4 +1,4 @@
-![Exam instructions](https://github.com/sandokanCat/42piscine/exam.jpg)
+![Exam instructions](exam.jpg)
 
 > [norminette](https://github.com/42school/norminette)
 
