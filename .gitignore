@@ -1,0 +1,44 @@
+# =============================
+# 42 PROJECTS .GITIGNORE
+# =============================
+
+# IGNORE HIDDEN FILES (EXCEPT .gitignore)
+.*
+!.gitignore
+
+# IGNORE COMPILED OBJECT FILES
+*.o
+
+# INGNORE EXECUTABLES
+a.out
+*.exe
+
+# IGNORE EDITOR TEMPORARY FILES
+*~
+*.swp
+*.swo
+*.swn
+*.tmp
+*.bak
+*.DS_Store
+
+# IGNORE IDE FOLDERS
+.vscode/
+.idea/
+
+# IGNORE PYTHON VIRTUAL ENVIRONMENTS (IF ANY)
+venv/
+.env/
+
+# IGNORE LOGS AND TEMPORARY FILES
+*.log
+
+# INCLUDE .c FILES FOR 42 PROJECTS
+!*.c
+
+# OPTIONAL: VIM CONFIG (ONLY FOR GIRHUB)
+!.vimrc
+
+# OPTIONAL: ALLOW MARKDOWN AND IMAGE FILES (NEVER IN 42)
+# *.md
+# *.jpg
