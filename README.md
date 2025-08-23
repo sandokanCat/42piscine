@@ -1,3 +1,7 @@
+![Exam instructions](https://github.com/sandokanCat/42piscine/exam.jpg)
+
+> [norminette](https://github.com/42school/norminette)
+
 # 📝 Vim Cheat Sheet for C Programming
 
 ## 📌 Vim Modes
