@@ -1,44 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: goncabez <goncabez@student.42barcelona.com> +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 14:35:27 by goncabez          #+#    #+#             */
-/*   Updated: 2025/08/28 15:42:51 by goncabez         ###   ########.fr       */
+/*   Created: 2025/08/28 15:45:10 by goncabez          #+#    #+#             */
+/*   Updated: 2025/08/28 20:21:49 by goncabez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
 
-/* COPY UP TO N CHARS FROM SRC INTO DEST */
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+/* RETURN 1 IF STR IS ONLY DIGITS OR EMPTY, ELSE RETURN 0 */
+int	ft_str_is_numeric(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (!(str[i] >= '0' && str[i] <= '9'))
+			return (0);
 		i++;
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	return (1);
 }
 
 /*
 int	main(void)
 {
-	char	src[] = "https://github.com/sandokanCat";
-	char	dest[20];
+	char *test = "123456";
 
-	ft_strncpy(dest, src, 18);
-	printf("DEST: %s\n", dest);
+	printf("%s -> %d\n", test, ft_str_is_numeric(test));
 	return (0);
 }
 */
