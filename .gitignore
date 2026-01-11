@@ -4,7 +4,7 @@
 
 # IGNORE HIDDEN FILES (EXCEPT .gitignore)
 .*
-# !.gitignore
+!.gitignore
 
 # IGNORE COMPILED OBJECT FILES
 *.o
@@ -37,8 +37,8 @@ venv/
 !*.c
 
 # OPTIONAL: VIM CONFIG (ONLY FOR GITHUB)
-# !.vimrc
+!.vimrc
 
 # OPTIONAL: IGNORE MARKDOWN AND IMAGE FILES (NEVER IN 42)
-*.md
+*.pdf
 *.jpg
