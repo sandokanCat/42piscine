@@ -5,6 +5,7 @@
 # 📝 Vim Cheat Sheet for C Programming
 
 ## 📌 Vim Modes
+
 Vim has **three main modes**:
 
 1. **Normal Mode** → Default. Navigate, copy, paste, delete, search.
@@ -14,6 +15,7 @@ Vim has **three main modes**:
 ---
 
 ## 🚀 Open and Exit Files
+
 - `vim file.c` → Open C source file.
 - `:w` → Save changes.
 - `:q` → Quit.
@@ -23,7 +25,9 @@ Vim has **three main modes**:
 ---
 
 ## ✍️ Enter Insert Mode
+
 In **Normal Mode**, press:
+
 - `i` → Insert before cursor.
 - `a` → Insert after cursor.
 - `o` → New line below.
@@ -34,6 +38,7 @@ Press `Esc` to return to Normal Mode.
 ---
 
 ## 📂 Move in Normal Mode
+
 - `h` → Left.
 - `l` → Right.
 - `0` → Beginning of line.
@@ -47,6 +52,7 @@ Press `Esc` to return to Normal Mode.
 ---
 
 ## ✂️ Copy, Paste, Delete
+
 - `yy` → Copy (yank) line.
 - `p` → Paste after cursor.
 - `P` → Paste before cursor.
@@ -58,6 +64,7 @@ Press `Esc` to return to Normal Mode.
 ---
 
 ## 🔍 Search
+
 - `/text` → Search forward for `text`.
 - `?text` → Search backward for `text`.
 - `n` → Next match.
@@ -66,10 +73,13 @@ Press `Esc` to return to Normal Mode.
 ---
 
 ## 🔄 Search and Replace
+
 Replace all `;` with `ñ` in C code:
+
 ```vim
 :%s/;/ñ/g
 ```
+
 - `%` → Whole file.
 - `s` → Substitute.
 - `/;/ñ/` → From ; to ñ.
@@ -78,9 +88,10 @@ Replace all `;` with `ñ` in C code:
 ---
 
 ## ⚡ Tips for C
+
 - Indent blocks manually or with >> / << in Normal Mode.
 - Use `[{ or ]}` to jump to matching `{ or }`.
 - Compile quickly without leaving Vim: `:!cc % -o %<`
-	- `%` → current file, `%<` → file name without extension.
-	- Example: `:!cc ft_print_alphabet.c -o ft_print_alphabet && ./ft_print_alphabet`
+  - `%` → current file, `%<` → file name without extension.
+  - Example: `:!cc ft_print_alphabet.c -o ft_print_alphabet && ./ft_print_alphabet`
 - Check for compilation errors: `:copen` after `:make`.
